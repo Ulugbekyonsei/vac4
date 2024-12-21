@@ -1,7 +1,7 @@
 import streamlit as st
 import math
 st.title("Oilada bolalarga nisbatan jismoniy zo'ravonlik riskini hisoblovchi dastur")
-
+st.write("*Ulug'bek Tursunov*")
 st.write("Har bir ko'rsatkich uchun qiymatlarni kiriting:")
 
 # Coefficients from the provided model
@@ -32,7 +32,7 @@ qarovchi_oliy = st.selectbox("Qarovchi oliy ta'limga ega (ha = 1, yo'q = 0)", [0
 qarovchida_nogironlik = st.selectbox("Qarovchida nogironlik (bor = 1, yo'q = 0)", [0,1])
 oilada_bolalar_soni = st.number_input("Oilada bolalar soni", min_value=0, max_value=20, value=2)
 selected_option = st.selectbox(
-    "Mulk indeksi",
+    "Oilaning farovonlik holati",
     ["Kambag'al", "O'rtachadan past", "O'rtacha", "O'rtachadan yuqori", "Boy"]
 )
 
@@ -53,7 +53,7 @@ oila_boshligi_oliy = st.selectbox("Oila boshlig'i oliy ta'limga ega (ha = 1, yo'
 oilada_kattalar_bolalarga_nisbati = st.number_input("Oilada kattalar sonining bolalar soniga nisbati", value=1.0, format="%.3f")
 qishloq = st.selectbox("Qishloq yoki shahar (Qishloq = 1, Shahar = 0)", [0,1])
 selected_option_viloyat=st.selectbox(
-    "Ma'muriy-hududiy birlik",
+    "Oila yashovchi hudud:",
     ["Qoraqolpog'iston", "Andijon", "Buxoro",
      "Jizzax", "Qashqadaryo", "Navoiy",
       "Namangan", "Samarqand", "Surxandaryo",
@@ -105,3 +105,4 @@ prediction=1/(1+math.exp(-y))
 st.write("### Oilada bolaga nisbatan zo'ravonlik yuz berish ehtimoli:")
 st.write(100*prediction)
 
+st.write("Ushbu dastur test rejimida!")
