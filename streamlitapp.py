@@ -1,6 +1,6 @@
 import streamlit as st
 import math
-st.title("Oilada bolalarga nisbatan zo'ravonlik riskini hisoblovchi dastur")
+st.title("Oilada bolalarga nisbatan jismoniy zo'ravonlik riskini hisoblovchi dastur")
 
 st.write("Har bir ko'rsatkich uchun qiymatlarni kiriting:")
 
