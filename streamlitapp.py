@@ -1,7 +1,7 @@
 import streamlit as st
 import math
 st.title("Oilada bolalarga nisbatan jismoniy zo'ravonlik riskini hisoblovchi dastur")
-st.write("*Ulug'bek Tursunov*")
+st.write("*Ijtimoiy himoyani rivojlantirish instituti*")
 st.write("Har bir ko'rsatkich uchun qiymatlarni kiriting:")
 
 # Coefficients from the provided model
