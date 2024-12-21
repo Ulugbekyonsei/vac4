@@ -23,7 +23,7 @@ coef_qishloq=-0.134
 coef_viloyat=1
 
 # Input widgets
-bolaning_yoshi = st.number_input("Bolaning yoshi", min_value=0, max_value=14, value=5)
+bolaning_yoshi = st.number_input("Bolaning yoshi", min_value=3, max_value=14, value=5)
 ogil_bola = st.selectbox("Bola jinsi (o'g'il = 1, qiz = 0)", [0,1])
 bolada_nogironlik = st.selectbox("Bolada nogironlik mavjudligi (bor = 1, yo'q = 0)", [0,1])
 bolaning_yetimligi = st.selectbox("Bolaning yetimligi (ota yoki onasining vafot etganligi) (yetim = 1, yetim emas = 0)", [0,1])
